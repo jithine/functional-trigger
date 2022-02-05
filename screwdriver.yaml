@@ -2,6 +2,8 @@ shared:
    image: node:8
 jobs:
     simple:
+        annotations:
+          screwdriver.cd/buildPeriodically: H * * * * 
         steps:
             - echo: echo test
         requires: [~commit]
