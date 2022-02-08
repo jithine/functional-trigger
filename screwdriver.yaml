@@ -14,4 +14,4 @@ jobs:
     join:
         steps:
             - echo: echo test
-        requires: [parallel, sd@1:external]
+        requires: [parallel, sd@2:external]
